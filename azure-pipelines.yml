@@ -7,6 +7,9 @@ trigger:
 - main
 
 pool:
+- task: Delay@1
+  inputs:
+    delayForMinutes: '1'
   vmImage: ubuntu-latest
 
 steps:
